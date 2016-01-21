@@ -17,23 +17,31 @@ print('3. Sarcasm')
     
 Lang=input()
 
-#We are using if and elif clauses to translate the response into either a greeting in their chosen language or looping the user back to the question if they do not use a valid option.
-#We use the continue and break statements to send the user back to the original greeting or to end the loop if they properly choose a language.
-#In order for our if clause to appropriately loop the user back, we do have to use the interger function to get the interger value of the string entered by the user. That way if the response is not between 1-3 they are prompted again. 
-    
+#We are using if and elif clauses to translate the response into either a greeting in their chosen language. 
+
 if int(Lang) > 3 or int(Lang) < 1:
-    continue
+    print('That was not an option, silly!')
 elif Lang == '1':
     print('Bonjour, mon cheri!')
-    break
 elif Lang == '2':
     print('RAWWWWWRRRRR!!!!')
-    break
 elif Lang == '3':  
     print('How you doing?')
-    break
+        
+    
+#Here we are asking the user to exit the program.
+#Since it is in a while loop, if the user does not enter exit, the program will complain it wants to go back to sleep and prompt the user for an answer again. 
+    
+import sys
+    
+while True:
+    print('Type exit to exit.')
+    answer = input()
+    if answer == 'exit':
+        sys.exit()
+    print('Just let me go back to sleep already.')
 
-#The program automatically exits once it reaches the end of the instructions, otherwise, we could use exit() to close the window we were using.
+
 
     
 
