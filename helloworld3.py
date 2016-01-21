@@ -1,4 +1,4 @@
-+#Lara Alisha Willson
+#Lara Alisha Willson
 #This program greets user and has them choose a different language to greet them in.
 #Here we are acknowledging the user and asking them how they would like to be greeted.
 
@@ -15,9 +15,7 @@ print('3. Sarcasm')
     
 Lang=input()
 
-#We are using if and elif clauses to translate the response into either a greeting in their chosen language or looping the user back to the question if they do not use a valid option.
-#We use the continue and break statements to send the user back to the original greeting or to end the loop if they properly choose a language.
-
+#We are using if and elif clauses to translate the response into either a greeting in their chosen language or looping the user back to the question if they do not use a valid option
 
 if int(Lang) > 3 or int(Lang) < 1:
     print('That was not an option, silly!')
